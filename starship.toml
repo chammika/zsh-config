@@ -1,3 +1,6 @@
+# No blank line before the prompt (default true)
+add_newline = false
+
 # Hide gcloud account (email) from the prompt
 [gcloud]
 disabled = true
