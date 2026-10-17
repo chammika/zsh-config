@@ -1,15 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](#9A348E)\
+[](#957FB8)\
 $os\
 $username\
-[](bg:#DA627D fg:#9A348E)\
+[](bg:#D27E99 fg:#957FB8)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
+[](fg:#D27E99 bg:#FFA066)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
+[](fg:#FFA066 bg:#7E9CD8)\
 $c\
 $elixir\
 $elm\
@@ -24,15 +24,21 @@ $bun\
 $nim\
 $rust\
 $scala\
-[](fg:#86BBD8 bg:#06969A)\
+[](fg:#7E9CD8 bg:#7AA89F)\
 $docker_context\
-[](fg:#06969A bg:#33658A)\
+[](fg:#7AA89F bg:#2D4F67)\
 $time\
-[ ](fg:#33658A)\
-"""
+[ ](fg:#2D4F67)\
+$line_break\
+$character"""
 
 # Disable the blank line at the start of the prompt
 add_newline = false
+
+# Prompt symbol on its own line, Kanagawa springGreen / samuraiRed
+[character]
+success_symbol = '[❯](bold #98BB6C)'
+error_symbol = '[❯](bold #E82424)'
 
 # Hide gcloud account (email) from the prompt
 [gcloud]
@@ -42,19 +48,19 @@ disabled = true
 # and use the os module below
 [username]
 show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
+style_user = "fg:#1F1F28 bg:#957FB8"
+style_root = "fg:#1F1F28 bg:#957FB8"
 format = '[$user ]($style)'
 disabled = true
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
-style = "bg:#9A348E"
+style = "fg:#1F1F28 bg:#957FB8"
 disabled = true # Disabled by default
 
 [directory]
-style = "bg:#DA627D"
+style = "fg:#1F1F28 bg:#D27E99"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -74,36 +80,36 @@ truncation_symbol = "…/"
 
 [c]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [cpp]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
 symbol = " "
-style = "bg:#06969A"
+style = "fg:#1F1F28 bg:#7AA89F"
 format = '[ $symbol $context ]($style)'
 
 [elixir]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [elm]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
+style = "fg:#1F1F28 bg:#FFA066"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#FCA17D"
+style = "fg:#1F1F28 bg:#FFA066"
 format = '[$all_status$ahead_behind ]($style)'
 # Counts like p10k (kept from the previous config)
 modified = '!$count '
@@ -119,59 +125,59 @@ diverged = '⇡$ahead_count⇣$behind_count '
 
 [golang]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [gradle]
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [haskell]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [julia]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [maven]
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [bun]
 symbol = ""
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [nim]
 symbol = "󰆥 "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [scala]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
+style = "fg:#DCD7BA bg:#2D4F67"
 format = '[ ♥ $time ]($style)'
