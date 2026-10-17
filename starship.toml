@@ -1,15 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](#957FB8)\
+[](#7E9CD8)\
 $os\
 $username\
-[](bg:#D27E99 fg:#957FB8)\
+[](bg:#7E9CD8 fg:#7E9CD8)\
 $directory\
-[](fg:#D27E99 bg:#FFA066)\
+[](fg:#7E9CD8 bg:#C0A36E)\
 $git_branch\
 $git_status\
-[](fg:#FFA066 bg:#7E9CD8)\
+[](fg:#C0A36E bg:#76946A)\
 $c\
 $elixir\
 $elm\
@@ -24,11 +24,11 @@ $bun\
 $nim\
 $rust\
 $scala\
-[](fg:#7E9CD8 bg:#7AA89F)\
+[](fg:#76946A bg:#957FB8)\
 $docker_context\
-[](fg:#7AA89F bg:#2D4F67)\
+[](fg:#957FB8 bg:#727169)\
 $time\
-[ ](fg:#2D4F67)\
+[ ](fg:#727169)\
 $line_break\
 $character"""
 
@@ -48,19 +48,19 @@ disabled = true
 # and use the os module below
 [username]
 show_always = true
-style_user = "fg:#1F1F28 bg:#957FB8"
-style_root = "fg:#1F1F28 bg:#957FB8"
+style_user = "fg:#1F1F28 bg:#7E9CD8"
+style_root = "fg:#1F1F28 bg:#7E9CD8"
 format = '[$user ]($style)'
 disabled = true
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
-style = "fg:#1F1F28 bg:#957FB8"
+style = "fg:#1F1F28 bg:#7E9CD8"
 disabled = true # Disabled by default
 
 [directory]
-style = "fg:#1F1F28 bg:#D27E99"
+style = "fg:#1F1F28 bg:#7E9CD8"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -80,36 +80,36 @@ truncation_symbol = "…/"
 
 [c]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [cpp]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [docker_context]
 symbol = " "
-style = "fg:#1F1F28 bg:#7AA89F"
+style = "fg:#1F1F28 bg:#957FB8"
 format = '[ $symbol $context ]($style)'
 
 [elixir]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [elm]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [git_branch]
 symbol = ""
-style = "fg:#1F1F28 bg:#FFA066"
+style = "fg:#1F1F28 bg:#C0A36E"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "fg:#1F1F28 bg:#FFA066"
+style = "fg:#1F1F28 bg:#C0A36E"
 format = '[$all_status$ahead_behind ]($style)'
 # Counts like p10k (kept from the previous config)
 modified = '!$count '
@@ -125,59 +125,59 @@ diverged = '⇡$ahead_count⇣$behind_count '
 
 [golang]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [gradle]
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [haskell]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [java]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [julia]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [maven]
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [nodejs]
 symbol = ""
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [bun]
 symbol = ""
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [nim]
 symbol = "󰆥 "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [rust]
 symbol = ""
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [scala]
 symbol = " "
-style = "fg:#1F1F28 bg:#7E9CD8"
+style = "fg:#1F1F28 bg:#76946A"
 format = '[ $symbol ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "fg:#DCD7BA bg:#2D4F67"
+style = "fg:#DCD7BA bg:#727169"
 format = '[ ♥ $time ]($style)'
