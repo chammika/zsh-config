@@ -81,12 +81,12 @@ truncation_symbol = "…/"
 [c]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [cpp]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [docker_context]
 symbol = " "
@@ -96,12 +96,12 @@ format = '[ $symbol $context ]($style)'
 [elixir]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [elm]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [git_branch]
 symbol = ""
@@ -126,55 +126,55 @@ diverged = '⇡$ahead_count⇣$behind_count '
 [golang]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [gradle]
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [haskell]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [java]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [julia]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [maven]
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [nodejs]
 symbol = ""
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [bun]
 symbol = ""
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [nim]
 symbol = "󰆥 "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [rust]
 symbol = ""
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [scala]
 symbol = " "
 style = "fg:#1F1F28 bg:#7E9CD8"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
 
 [time]
 disabled = false
