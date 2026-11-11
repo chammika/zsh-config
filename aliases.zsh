@@ -2,7 +2,7 @@
 alias shutdown='sudo shutdown now'
 alias restart='sudo reboot'
 alias suspend='sudo pm-suspend'
-alias sleep='pmset sleepnow'
+alias sleepnow='pmset sleepnow'
 alias c='clear'
 alias e='exit'
 alias ep="echo ${PATH} | sed -e $'s/:/\\\n/g'"
