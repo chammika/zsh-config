@@ -31,3 +31,8 @@ P="$HOME/.oh-my-zsh/custom/plugins"
 [ -f "$P/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && source "$P/zsh-autosuggestions/zsh-autosuggestions.zsh"
 [ -f "$P/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source "$P/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 unset P
+# Comments default to fg=black,bold (invisible on dark themes); use light gray
+ZSH_HIGHLIGHT_STYLES[comment]='fg=244'
+
+# Treat # as a comment at the interactive prompt
+setopt interactive_comments
