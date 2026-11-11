@@ -75,6 +75,8 @@ format = '[$symbol]($style)'
 
 [golang]
 format = '[$symbol]($style)'
+symbol = ' '
+style = 'bold blue'
 
 [gradle]
 format = '[$symbol]($style)'
